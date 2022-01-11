@@ -1,0 +1,187 @@
+@import "variables";
+@import "tiendas";
+@import "contacto";
+
+// estilos header y body
+
+header{
+    padding: 1em;
+    background-image: linear-gradient($rosa, $claro);
+
+    h1{
+        font-family: $fuente-titulo;
+        color: $verde;
+        text-align: center;
+        font-size: 3.2em;
+        padding-top: 0.4em;
+    }
+}
+
+body{
+    background-color: $muyClaro;
+    font-family: $fuente-cuerpo;
+}
+
+// estilos barra de navegación
+
+.barraNavegacion{
+    background-color: $fucsia !important;
+    
+    a{
+        color: $muyClaro !important;
+        font-size: 1.1em;
+
+        &:hover{
+            font-weight: bold;
+        }   
+    }       
+}
+
+.botonBuscar{
+    border-style: map-get($botones, borde-estilo);
+    border-width: map-get($botones, borde-grosor);
+    border-color: map-get($botones, borde-color);
+    color: map-get($botones, color-fuente);
+    background-color: map-get($botones, color-fondo);
+    font-weight: bold;   
+
+    &:hover{
+        background-color: $verde;
+        border: $borde1 $verde;
+    }
+}
+
+
+// estilos sección destacados
+
+.contenedorDestacados{
+    margin-top: 3rem;
+}
+.cajasDestacados{
+    height: 25rem;
+    width: 25rem;
+    text-align: center;
+    background-color: $rosa;
+    padding: 1em 0.8em;
+    margin: 0.5em;
+    border-radius: 0.8em;
+    
+
+    &:hover{
+        
+        a{
+            border: $borde1/10 solid;
+            color: $muyClaro;
+            background-image: linear-gradient(to right, $fucsia, $rosa);
+        }
+    }
+
+    a{
+        text-decoration: none;
+        border-radius: 1em;
+        color: $oscuro;
+        font-size: 1.2em;
+        padding: 1em 0.8em;
+        transition: all 1s;
+
+        
+    }
+}
+
+.cajaMasVendidos{
+    background-image: url(../assets/img/set-lancome.jpg);
+    background-size: $bg-size;
+    
+}
+
+.cajaLanzamientos{
+    background-image: url(../assets/img/set-tom-ford.jpg);
+    background-size: $bg-size;
+}
+
+.cajaPromociones{
+    background-image: url(../assets/img/set-bobbi.jpg);
+    background-size: $bg-size;
+}
+
+
+// estilos videos
+
+iframe{
+    margin: 0.8em auto;
+}
+
+// estilos links calidad y expertos
+
+.seccionExtras{
+    margin: 3em auto;
+
+    .extras{
+        margin: 2em 3em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+               
+            .imgExtras1{
+                width: 14em;
+                height: auto;
+                border-radius: 100%;
+                margin-bottom: 0.2em;
+            
+            }
+        
+            .imgExtras2{
+                width: auto;
+                height: 13em;
+                margin-bottom: 0.2em;
+            }
+           
+            a{
+                color: $oscuro;
+                text-decoration: none;
+            }
+        
+            p{
+                font-size: 0.9em;
+                color: $verde;
+            }
+        }
+         
+}
+
+
+// estilos footer
+
+footer{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-image: linear-gradient($rosa, $claro);
+
+    a{
+        color: $oscuro !important;
+        font-size: 0.9em;
+    
+        &:hover{
+            text-decoration: underline;
+        }
+    
+    }
+
+    .socialMedia{
+        
+        i{
+            font-size: 1.2em;
+        }
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+        }
+    }
+
+    
+
+}

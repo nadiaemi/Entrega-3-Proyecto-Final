@@ -1,0 +1,192 @@
+.tituloPaginas {
+  font-family: "Arima Madurai", cursive;
+  margin: 1.5em auto auto 3em; }
+  .tituloPaginas h2 {
+    font-size: 2em;
+    color: #ff0579; }
+  .tituloPaginas h3 {
+    font-size: 1.2em;
+    color: #161d1a; }
+
+.filtros {
+  margin: 0.8em 1em; }
+  .filtros ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .filtros li {
+    list-style: none;
+    padding: 0.5em 1em;
+    border: 1px solid #ffa586;
+    border-right: 0.1em outset #ff0579;
+    background-color: #ffa586; }
+  .filtros a {
+    text-decoration: none;
+    color: #114f4f; }
+    .filtros a:hover {
+      font-weight: bold; }
+
+.contenedorTienda {
+  margin: 2.5em auto;
+  animation-name: animacionProductos;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out; }
+  .contenedorTienda img {
+    width: 100%; }
+
+@keyframes animacionProductos {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.botonComprar {
+  font-weight: bold; }
+
+.descripcionProducto {
+  border: 0px solid; }
+
+.cajaContacto {
+  margin: 2em auto; }
+  .cajaContacto span {
+    border: #114f4f;
+    background-color: #114f4f;
+    color: #161d1a;
+    color: #ffffef; }
+  .cajaContacto input, .cajaContacto textarea, .cajaContacto option, .cajaContacto select {
+    border: 1px solid;
+    background-color: #fdfdaa;
+    color: #161d1a; }
+  .cajaContacto button {
+    font-weight: bold;
+    margin: 1.8em auto; }
+  .cajaContacto .seccionCheck {
+    margin: 1.5em auto; }
+  .cajaContacto .cajaComentario {
+    height: 10em;
+    width: auto; }
+
+.seccionMapa {
+  margin: 1em; }
+  .seccionMapa iframe {
+    margin: 1em;
+    width: 28em;
+    height: 22em; }
+    @media screen and (max-width: 992px) {
+      .seccionMapa iframe {
+        width: 20em;
+        height: 15em; } }
+  .seccionMapa p {
+    margin: 0.1em 1em; }
+
+header {
+  padding: 1em;
+  background-image: linear-gradient(#ffa586, #fdfdaa); }
+  header h1 {
+    font-family: "Arima Madurai", cursive;
+    color: #114f4f;
+    text-align: center;
+    font-size: 3.2em;
+    padding-top: 0.4em; }
+
+body {
+  background-color: #ffffef;
+  font-family: "Public Sans", sans-serif; }
+
+.barraNavegacion {
+  background-color: #ff0579 !important; }
+  .barraNavegacion a {
+    color: #ffffef !important;
+    font-size: 1.1em; }
+    .barraNavegacion a:hover {
+      font-weight: bold; }
+
+.botonBuscar, .botonComprar, .cajaContacto button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff0579;
+  color: #ff0579;
+  background-color: #ffffef;
+  font-weight: bold; }
+  .botonBuscar:hover, .botonComprar:hover, .cajaContacto button:hover {
+    background-color: #114f4f;
+    border: 1px solid #114f4f; }
+
+.contenedorDestacados {
+  margin-top: 3rem; }
+
+.cajasDestacados {
+  height: 25rem;
+  width: 25rem;
+  text-align: center;
+  background-color: #ffa586;
+  padding: 1em 0.8em;
+  margin: 0.5em;
+  border-radius: 0.8em; }
+  .cajasDestacados:hover a {
+    border: 1px solid/10 solid;
+    color: #ffffef;
+    background-image: linear-gradient(to right, #ff0579, #ffa586); }
+  .cajasDestacados a {
+    text-decoration: none;
+    border-radius: 1em;
+    color: #161d1a;
+    font-size: 1.2em;
+    padding: 1em 0.8em;
+    transition: all 1s; }
+
+.cajaMasVendidos {
+  background-image: url(../assets/img/set-lancome.jpg);
+  background-size: cover; }
+
+.cajaLanzamientos {
+  background-image: url(../assets/img/set-tom-ford.jpg);
+  background-size: cover; }
+
+.cajaPromociones {
+  background-image: url(../assets/img/set-bobbi.jpg);
+  background-size: cover; }
+
+iframe {
+  margin: 0.8em auto; }
+
+.seccionExtras {
+  margin: 3em auto; }
+  .seccionExtras .extras {
+    margin: 2em 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .seccionExtras .extras .imgExtras1 {
+      width: 14em;
+      height: auto;
+      border-radius: 100%;
+      margin-bottom: 0.2em; }
+    .seccionExtras .extras .imgExtras2 {
+      width: auto;
+      height: 13em;
+      margin-bottom: 0.2em; }
+    .seccionExtras .extras a {
+      color: #161d1a;
+      text-decoration: none; }
+    .seccionExtras .extras p {
+      font-size: 0.9em;
+      color: #114f4f; }
+
+footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-image: linear-gradient(#ffa586, #fdfdaa); }
+  footer a {
+    color: #161d1a !important;
+    font-size: 0.9em; }
+    footer a:hover {
+      text-decoration: underline; }
+  footer .socialMedia i {
+    font-size: 1.2em; }
+  @media screen and (max-width: 600px) {
+    footer .socialMedia {
+      flex-direction: column;
+      flex-wrap: wrap; } }

@@ -1,0 +1,77 @@
+.tituloPaginas{
+    font-family: $fuente-titulo;
+    margin: 1.5em auto auto 3em;
+    
+    
+    h2{
+        font-size: 2em;
+        color: $fucsia;
+    }
+
+    h3{
+        font-size: 1.2em;
+        color: $oscuro
+    }
+
+}
+
+.filtros {
+    margin: 0.8em 1em;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    li{
+        list-style: none;
+        padding: 0.5em 1em;
+        border: $borde1 $rosa;
+        border-right: 0.1em outset $fucsia;
+        background-color: $rosa;
+    }
+
+    a{
+        text-decoration: none;
+        color: $verde;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+.contenedorTienda{
+    margin: 2.5em auto;
+    animation-name: animacionProductos;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+
+    img{
+        width: 100%;
+    }
+   
+}
+
+@keyframes animacionProductos{
+    0% {
+        opacity: 0;    ;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+         
+}
+
+.botonComprar{
+    @extend .botonBuscar;
+    font-weight: bold;
+
+}
+
+.descripcionProducto{
+    border: 0px solid;
+}

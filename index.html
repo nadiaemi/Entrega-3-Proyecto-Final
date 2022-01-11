@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tu sitio de compras de perfumes, maquillaje y cuidado de la piel">
+    <meta name="keywords" content="perfumes, fragancias, belleza, maquillaje, cremas, facial, corporal, cabello">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Public+Sans&display=swap" rel="stylesheet">
+    <title>Tienda de Belleza</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Belleza</h1>
+    </header>
+    <!-- menú navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top barraNavegacion">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/fragancias.html">Fragancias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/maquillaje.html">Maquillaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/tratamiento.html">Tratamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+              <button class="btn btn-outline-success botonBuscar" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main>
+    <!-- carrusel de imágenes -->
+      <div class="container-fluid" id="carrusel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner carruselInicio">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./assets/img/carrusel-perfume.jpg" class="d-block w-100 imgCarrusel" alt="perfumes-guerlain">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./assets/img/carrusel-maquillaje.jpg" class="d-block w-100 imgCarrusel" alt="maquillaje-guerlain">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carrusel-tratamiento.jpg" class="d-block w-100 imgCarrusel" alt="tratamiento-guerlain">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+
+          <!-- sección destacados -->
+          <div class="container contenedorDestacados">
+            <div class="row justify-content-center">
+              <div class="col-md-3 col-sm-12 cajasDestacados cajaMasVendidos">
+                <a href="#">MÁS VENDIDOS</a>
+              </div>
+              <div class="col-md-3 col-sm-12 cajasDestacados cajaLanzamientos">
+                <a href="#">LANZAMIENTOS</a>
+              </div>
+              <div class="col-md-3 col-sm-12 cajasDestacados cajaPromociones">
+                <a href="#">PROMOCIONES</a>
+              </div>
+            </div>
+          </div>
+
+        <!-- sección vídeos -->
+        <div class="container">
+          <div class="row seccionVideos">
+            <div class="col cajaVideo d-flex justify-content-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/62mUh2MEQr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col cajaVideo d-flex justify-content-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3PiTcle2K54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <section class="seccionExtras container">
+        <div class="row justify-content-center">
+          <div class="col extras">
+            <img class="imgExtras2" src="./assets/img/variedad-marcas.png" alt="marcas-belleza">
+            <div> 
+              <a href="">La Mejor Variedad</a>
+              <p>Contamos con una amplia gama de marcas y productos acorde a lo que buscas</p>
+            </div> 
+          </div> 
+          <div class="col extras">
+              <img class="imgExtras1" src="./assets/img/perfumes-calidad.png" alt="calidad-perfumes">
+            <div>
+              <a href="">Calidad 100% garantizada</a>
+              <p>Todos nuestros productos son originales y cumplen con lo más altos estándares de calidad</p>
+            </div>   
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col extras">
+            <img class="imgExtras1" src="./assets/img/expertos-asesores.png" alt="asesores-belleza">
+              <div>  
+                <a href="">Solicitá asesoramiento</a>
+                <p>Podes consultar con nuestros expertos en fragancias, maquillaje y cuidado de la piel</p>
+              </div>
+            </div>
+            <div class="col extras">
+              <img class="imgExtras2" src="./assets/img/membership.png" alt="puntos-premios">
+            <div>
+              <a href="">Club del Aroma</a>
+              <p>¡Unite gratis y con tus compras sumás puntos que podes canjear por premios, descuentos y mucho más!</p>          
+            </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- menú footer -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-8">
+        <ul class="nav justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Seguimiento de envíos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Medios de pago</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-4">
+          <ul class="nav justify-content-center socialMedia">
+            <li class="px-4 py-2">
+              <a href="https://www.instagram.com/?hl=es-la"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li class="px-4 py-2">
+              <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li class="px-4 py-2">   
+              <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

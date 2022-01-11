@@ -1,0 +1,35 @@
+// creo variables para los colores, las fuentes y bordes
+
+$oscuro: #161d1a;
+$verde: #114f4f;
+$fucsia: #ff0579;
+$rosa: #ffa586;
+$claro:#fdfdaa;
+$muyClaro: #ffffef;
+
+$fuente-cuerpo: 'Public Sans', sans-serif;
+$fuente-titulo: 'Arima Madurai', cursive;
+
+$borde1: 1px solid;
+
+$bg-size: cover;
+
+
+// creo un mixin para los elementos del formulario
+
+@mixin cajasFormularios ($borde, $fondo, $fuente) {
+    border: $borde;
+    background-color: $fondo;
+    color: $fuente
+    
+}
+
+// declaro un mapa para los botones
+
+$botones: (
+    borde-estilo: solid,
+    borde-grosor: 1px,
+    borde-color: $fucsia,
+    color-fuente: $fucsia,
+    color-fondo: $muyClaro,
+);
